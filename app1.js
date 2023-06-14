@@ -5,12 +5,21 @@ async function logJSONData() {
   console.log(answerData);
   
   let city = answerData["name"];
+  console.log(city);
   let temp = answerData["main"]["temp"];
+  console.log(temp);
   let pressure = answerData["main"]["pressure"];
+  console.log(pressure);
   let descr = answerData["weather"][0]["description"];
+  console.log(descr);
   let hum = answerData["main"]["humidity"];
+  consol.log(hum);
   let speed = answerData["wind"]["speed"];
+  console.log(speed);
   let deg = answerData["wind"]["deg"];
+  console.log(deg);
+  let icon=answerData["weather"][0]["icon"];
+  console.log(icon);
   let allResult = `Mісто` + ` ` + city + `</br>` +
                   'температура повітря' + ' ' + temp + `град` + `</br>` +
                    `атмосферний тиск` + ` ` + pressure + 'гект-паск' + `</br>` +
